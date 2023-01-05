@@ -18,14 +18,15 @@
   "license": "MIT",
   "author": "Aliaksei Hrynko (https://github.com/hrynko)",
   "scripts": {
-    "prepare": "webpack build",
     "build": "webpack build --progress",
     "serve": "webpack serve --config webpack.dev.config.js --hot",
     "test": "jest",
     "lint": "eslint \"**/*.{js,vue}\"",
     "lint:fix": "eslint \"**/*.{js,vue}\" --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001442"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
