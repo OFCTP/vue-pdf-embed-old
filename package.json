@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "Aliaksei Hrynko (https://github.com/hrynko)",
   "scripts": {
-    "build": "webpack build --progress",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack build --progress",
     "serve": "webpack serve --config webpack.dev.config.js --hot",
     "test": "jest",
     "lint": "eslint \"**/*.{js,vue}\"",
