@@ -19,7 +19,7 @@
   "author": "Aliaksei Hrynko (https://github.com/hrynko)",
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider webpack build --progress",
-    "serve": "webpack serve --config webpack.dev.config.js --hot",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --config webpack.dev.config.js --hot",
     "test": "jest",
     "lint": "eslint \"**/*.{js,vue}\"",
     "lint:fix": "eslint \"**/*.{js,vue}\" --fix"

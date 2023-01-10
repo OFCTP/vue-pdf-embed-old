@@ -421,7 +421,7 @@ export default {
      * Renders the page content.
      * @param {PDFPageProxy} page - Page proxy.
      * @param {HTMLCanvasElement} canvas - HTML canvas.
-     * @param {HTMLCanvasElement} canvas - HTML canvas drawings.
+     * @param {HTMLCanvasElement} draws - HTML canvas drawings.
      * @param {number} width - Actual page width.
      */
     async renderPage(page, canvas, draws, width) {
@@ -433,9 +433,9 @@ export default {
       //console.log(viewport)
 
       canvas.width = viewport.width
-      // canvas.height = viewport.height
+      canvas.height = viewport.height
       draws.width = viewport.width
-      // draws.height = viewport.height
+      draws.height = viewport.height
 
       const context = canvas.getContext('2d')
       /*
