@@ -454,6 +454,10 @@ export default {
         canvasContext: context,
         viewport,
       }).promise
+
+      console.log('cancel canvas and draws heights');
+      canvas.style.height = null
+      draws.style.height = null
     },
     handleEvent(event) {
         this.$emit(
