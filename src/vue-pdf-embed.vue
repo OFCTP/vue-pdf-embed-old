@@ -376,19 +376,19 @@ export default {
 
             if ((this.rotation / 90) % 2) {
               canvas.style.width = `${Math.floor(actualHeight)}px`
-              canvas.style.height = `${Math.floor(actualWidth)}px`
+              // canvas.style.height = `${Math.floor(actualWidth)}px`
             } else {
               canvas.style.width = `${Math.floor(actualWidth)}px`
-              canvas.style.height = `${Math.floor(actualHeight)}px`
+              // canvas.style.height = `${Math.floor(actualHeight)}px`
             }
 
             // Set the height, width and margin of the div container
-            this.$el.children[i].style.height = `${Math.floor(actualHeight)}px`
+            // this.$el.children[i].style.height = `${Math.floor(actualHeight)}px`
             this.$el.children[i].style.width = `${Math.floor(actualWidth)}px`
             this.$el.children[i].style.margin = `${Math.floor(this.margin)}px`
             // Propagate the height to the nested canvas
             draws.style.width = canvas.style.width
-            draws.style.height = canvas.style.height
+            // draws.style.height = canvas.style.height
             await this.renderPage(page, canvas, draws, actualWidth)
 
             if (!this.disableTextLayer) {
@@ -433,9 +433,9 @@ export default {
       //console.log(viewport)
 
       canvas.width = viewport.width
-      canvas.height = viewport.height
+      // canvas.height = viewport.height
       draws.width = viewport.width
-      draws.height = viewport.height
+      // draws.height = viewport.height
 
       const context = canvas.getContext('2d')
       /*
